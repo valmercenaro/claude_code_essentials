@@ -1,0 +1,20 @@
+{
+  "mcpServers": {
+    "playwright": {
+      "command": "npx",
+      "args": ["@playwright/mcp@latest"]
+    },
+    "memory": {
+      "command": "uv",
+      "args": ["run", "--directory", "./mcps/memory", "python", "server.py"]
+    },
+    "prompts": {
+      "command": "uv",
+      "args": ["run", "--directory", "./mcps/prompts", "python", "server.py"]
+    },
+    "journal": {
+      "command": "uv",
+      "args": ["run", "--directory", "./mcps/journal", "python", "server.py"]
+    }
+  }
+}
